@@ -5,8 +5,7 @@ import plotly.express as px
 import streamlit as st
 from datetime import datetime
 
-# Extract and Load the Data (Simulate loading from Phonepe Pulse GitHub repository)
-# Here, we will use a simple CSV for demonstration; replace this with the actual data extraction process.
+# Extract and Load the Data
 data = {
     'id': [1, 2, 3],
     'region': ['North', 'South', 'East'],
@@ -15,10 +14,10 @@ data = {
     'date': ['2025-01-01', '2025-01-02', '2025-01-03']
 }
 
-# Create the DataFrame (transformed_df)
+# Create the DataFrame 
 transformed_df = pd.DataFrame(data)
 
-# Transform the Data (Here it's just simulating the transformation)
+# Transform the Data 
 transformed_df['date'] = pd.to_datetime(transformed_df['date'])
 
 # Converting the 'date' column to string in 'YYYY-MM-DD' format
